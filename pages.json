@@ -1,0 +1,81 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"tui-(.*)": "@/components/thorui-uni/lib/thorui/tui-$1/tui-$1.vue",
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarTextStyle": "white",
+				"navigationBarBackgroundColor": "#4f77ed"
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/selectDepts/selectDepts",
+			"style": {
+				"navigationBarTitleText": "请选择部门",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "pagesMenus",
+		"pages": [{
+			"path": "notices/notices",
+			"style": {
+				"navigationBarTitleText": "通知公告",
+				"enablePullDownRefresh": true
+			}
+		}, {
+			"path": "notices/detail",
+			"style": {
+				"navigationBarTitleText": "详情",
+				"enablePullDownRefresh": false
+			}
+		}]
+	}],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "近物所",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#f3f4f8"
+	},
+	// "tabBar": {
+	// 	"color": "#333333",
+	// 	"selectedColor": "#4094ff",
+	// 	"backgroundColor": "#FFFFFF",
+	// 	"borderStyle": "black",
+	// 	"list": [{
+	// 			"pagePath": "pages/index/index",
+	// 			"iconPath": "static/tabbar/home_1.png",
+	// 			"selectedIconPath": "static/tabbar/home_2.png",
+	// 			"text": "首页"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/work/index",
+	// 			"iconPath": "static/tabbar/apply_1.png",
+	// 			"selectedIconPath": "static/tabbar/apply_2.png",
+	// 			"text": "工作台"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/mine/index",
+	// 			"iconPath": "static/tabbar/my_1.png",
+	// 			"selectedIconPath": "static/tabbar/my_2.png",
+	// 			"text": "个人中心"
+	// 		}
+	// 	]
+	// },
+	"uniIdRouter": {}
+}
