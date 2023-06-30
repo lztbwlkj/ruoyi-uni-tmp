@@ -2,7 +2,7 @@
 	<view class="login">
 		<view class="login-top"></view>
 		<view class="login-logo">
-			<image src="@/static/logo.png">
+			<image :src="config.logo">
 			</image>
 		</view>
 		<view class="login-title">
